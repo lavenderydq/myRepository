@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>github界面打开加载不全解决办法</title>
+</head>
+<body>
+     <p>
+         最近在使用github的时候 经常会出现 输入正常网址后 界面加载不全的问题 因此个人对此进行了总结
+     </p>
+     <p>
+         <p>解决方法如下：</p>
+         <p>可以修改C/Windows/System32/drivers/etc中的hosts文件 将下面一段话添加到hosts文件中</p>
+         # GitHub Start
+         192.30.253.112 github.com
+         192.30.253.119 gist.github.com
+         151.101.100.133 assets-cdn.github.com
+         151.101.100.133 raw.githubusercontent.com
+         151.101.100.133 gist.githubusercontent.com
+         151.101.100.133 cloud.githubusercontent.com
+         151.101.100.133 camo.githubusercontent.com
+         151.101.100.133 avatars0.githubusercontent.com
+         151.101.100.133 avatars1.githubusercontent.com
+         151.101.100.133 avatars2.githubusercontent.com
+         151.101.100.133 avatars3.githubusercontent.com
+         151.101.100.133 avatars4.githubusercontent.com
+         151.101.100.133 avatars5.githubusercontent.com
+         151.101.100.133 avatars6.githubusercontent.com
+         151.101.100.133 avatars7.githubusercontent.com
+         151.101.100.133 avatars8.githubusercontent.com
+         # GitHub End
+         <p>
+         如果没有修改权限 可以将hosts文件复制到桌面上 然后进行修改 修改之后 在放到原文件中</p>
+         <p style="color:red">PS: 以上方法 已经经过测试 很有效</p>
+
+     </p>
+</body>
+</html>
